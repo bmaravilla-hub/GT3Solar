@@ -69,7 +69,7 @@ body {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   min-height: 300px;
   display: flex;
   align-items: center;
@@ -80,14 +80,14 @@ body {
   align-items: flex-end;
   justify-content: flex-start;
   width: 100%;
-  gap: 0;
-  padding-bottom: -200px;
 }
 
 #contacto-hero .hero-avatar {
   max-width: 300px;
   height: auto;
-  margin: 0;
+  position: absolute;
+  bottom: 1px;
+  z-index: 100;
 }
 
 #contacto-hero .text-section {
@@ -465,3 +465,26 @@ body {
   }
 }
 
+/*==========================================*/
+/* ===== ESTANDARIZACIÓN DE BANNERS ===== */
+/*==========================================*/
+#contacto-hero.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 1rem 4rem;
+}
+
+@media (max-width: 992px) {
+  #contacto-hero.hero {
+    min-height: 70vh;
+    padding: 7rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contacto-hero.hero {
+    min-height: 60vh;
+    padding: 6rem 1rem 2rem;
+  }
+}

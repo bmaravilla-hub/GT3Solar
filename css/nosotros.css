@@ -106,7 +106,8 @@ body {
   max-width: 100%;
   height: auto;
   position: absolute;
-  bottom: 97px;
+  bottom: 86px;
+  max-height: 450px;
   left: 0;
   transform: translateY(30%);
 }
@@ -734,3 +735,25 @@ body {
   }
 }
 
+/*==========================================*/
+/* ===== ESTANDARIZACIÓN DE BANNERS ===== */
+/*==========================================*/
+
+.hero-nosotros {
+  min-height: 85vh;
+  padding: 8rem 0 4rem;
+}
+
+@media (max-width: 992px) {
+  .hero-nosotros {
+    min-height: 70vh;
+    padding: 7rem 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-nosotros {
+    min-height: 60vh;
+    padding: 6rem 0 2rem;
+  }
+}

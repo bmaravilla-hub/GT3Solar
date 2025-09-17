@@ -89,7 +89,6 @@ position:relative;
 overflow:visible;
 }
 
-/* texto hero */
 .hero h1{
 font-size:3.2rem;
 line-height:1.02;
@@ -101,7 +100,7 @@ color:var(--text-dark);
 .hero-avatar{
 position:absolute;
 right:10%;
-bottom:0px;
+bottom:-2px;
 z-index: 100;
 max-height:450px;
 pointer-events:none;
@@ -1163,3 +1162,70 @@ font-size: 0.9rem;
 }
 }
 
+/*==========================================*/
+/* ===== ESTANDARIZACIÓN DE BANNERS ===== */
+/*==========================================*/
+
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 1rem 4rem;
+}
+
+.hero-section .container {
+    width: 100%;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+#inicio.hero, 
+#contacto-hero.hero, 
+.hero-nosotros,
+.hero-section {
+    min-height: 85vh !important;
+    padding: 8rem 1rem 4rem !important;
+}
+
+@media (max-width: 992px) {
+    .hero-section,
+    #inicio.hero, 
+    #contacto-hero.hero, 
+    .hero-nosotros {
+        min-height: 70vh !important;
+        padding: 7rem 1rem 3rem !important;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
+        margin: 0 auto 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    #inicio.hero, 
+    #contacto-hero.hero, 
+    .hero-nosotros {
+        min-height: 60vh !important;
+        padding: 6rem 1rem 2rem !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+}
