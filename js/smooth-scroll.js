@@ -5,7 +5,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Seleccionar todos los enlaces con hash
+
     const internalLinks = document.querySelectorAll('a[href^="#"]');
     
     internalLinks.forEach(link => {
